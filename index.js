@@ -262,7 +262,7 @@ async function downloadVideo() {
 
         const info = await ytdl.getInfo(url, {
             requestOptions: {
-              agent,proxyAgent
+              proxyAgent
             },
           });
         console.log("hello world 2");
