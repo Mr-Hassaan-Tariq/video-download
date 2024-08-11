@@ -260,11 +260,7 @@ async function downloadVideo() {
 
         console.log("hello world");
 
-        const info = await ytdl.getInfo(url, {
-            requestOptions: {
-              proxyAgent
-            },
-          });
+        const info = await ytdl.getInfo(url,proxyAgent,agent);
         console.log("hello world 2");
         const format = ytdl.chooseFormat(info.formats, { quality: '18' });
         console.log("hello world 3");
