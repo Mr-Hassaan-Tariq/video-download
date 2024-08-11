@@ -18,7 +18,7 @@ async function downloadVideo() {
 
         
         
-        const proxyAgent = ytdl.createProxyAgent({ uri: "http://43.204.218.102:6002" });
+        // const proxyAgent = ytdl.createProxyAgent({ uri: "http://43.204.218.102:6002" });
         const agent = ytdl.createAgent([
             {
                 "domain": ".youtube.com",
