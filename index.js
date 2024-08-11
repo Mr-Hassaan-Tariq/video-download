@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const app = express();
+const HttpsProxyAgent = require('https-proxy-agent');
 
 const ytdl = require("@distube/ytdl-core");
 const fs = require('fs-extra'); // use fs-extra here
@@ -260,11 +261,11 @@ async function downloadVideo() {
 
         console.log("hello world");
 
-        // const agent = new HttpsProxyAgent('http://43.204.218.102:6002');
+        const agent1 = new HttpsProxyAgent('http://43.204.218.102:6002');
 
  
 
-        const info = await ytdl.getInfo(url,proxyAgent,agent);
+        const info = await ytdl.getInfo(url,{agent1});
         console.log("hello world 2");
         const format = ytdl.chooseFormat(info.formats, { quality: '18' });
         console.log("hello world 3");
