@@ -4,8 +4,9 @@ const cors = require('cors');
 const app = express();
 const {HttpsProxyAgent} = require('https-proxy-agent');
 
-const ytdl = require("@distube/ytdl-core");
+// const ytdl = require("@distube/ytdl-core");
 const fs = require('fs-extra'); // use fs-extra here
+const ytdl = require('ytdl-core');
 
 
 
