@@ -266,7 +266,7 @@ async function downloadVideo() {
  
 
         console.log("hello world1");
-        const info = await ytdl.getInfo(url,{agent1});
+        const info = await ytdl.getInfo(url);
         console.log("hello world 2");
         const format = ytdl.chooseFormat(info.formats, { quality: '18' });
         console.log("hello world 3");
