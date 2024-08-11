@@ -552,6 +552,6 @@ app.get('/api', async (req, res) => {
 })
 
 
-app.listen(process.env.PORT || 6002, () =>
-    console.log('Example app is listening on port 6002.'),
+app.listen(process.env.PORT || 6003, () =>
+    console.log('Example app is listening on port 6003.'),
 );
