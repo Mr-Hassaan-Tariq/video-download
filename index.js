@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const app = express();
-const HttpsProxyAgent = require('https-proxy-agent');
+const {HttpsProxyAgent} = require('https-proxy-agent');
 
 const ytdl = require("@distube/ytdl-core");
 const fs = require('fs-extra'); // use fs-extra here
